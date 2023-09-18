@@ -7,7 +7,7 @@ const Profile = () => {
     const { isAuthenticated, user,loading } = useContext(Context);
     console.log(user);
   return (
-    loading ? <Loader/>:(
+    loading ? (<Loader/>):(
         <div>
     <h1>{user?.name}</h1>
     <p>{user?.email}</p>

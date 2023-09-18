@@ -23,7 +23,7 @@ const Login = () => {
             },
             {
               headers: {
-                "Content-Type": "application/json",
+                "Content-Type":"application/json",
               },
               withCredentials: true,
             }
@@ -35,7 +35,6 @@ const Login = () => {
           toast.error(error.response.data.message);
           setIsAuthenticated(false);
           setLoading(false);
-
         }
       };
 
