@@ -39,11 +39,11 @@ const Login = () => {
         }
       };
 
-    if(isAuthenticated) return <Navigate to={"/"}/> 
+       if(isAuthenticated) return <Navigate to={"/"}/> 
 
-  return (
-    <div className="login">
-    <section>
+        return (
+           <div className="login">
+             <section>
         <form onSubmit={submitHandler}>
         <input
             value={email}
@@ -59,7 +59,7 @@ const Login = () => {
             required
             placeholder="Enter Your Password"
           />
-            <button disabled={loading} type='submit'>Login</button>
+            <button  type='submit'>Login</button>
             <h4>Or</h4>
             <Link to="/register">Sign Up</Link>
         </form>

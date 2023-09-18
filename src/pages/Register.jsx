@@ -64,7 +64,7 @@ const Register = () => {
             required
             placeholder="Enter Your Password"
           />
-          <button disabled={loading} type="submit">Sign Up</button>
+          <button  type="submit">Sign Up</button>
           <h4>Or</h4>
           <Link to="/login">Login</Link>
         </form>
